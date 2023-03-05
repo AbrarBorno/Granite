@@ -2,7 +2,7 @@ name: Build Project
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [opened, synchronize]
   push:
     branches: [master]
 
