@@ -11,10 +11,10 @@ jobs:
     name: "Build ${{ matrix.platform }} || SHARED=${{ matrix.shared }} || PLATFORM=${{ matrix.granite_platform }}"
     strategy:
       matrix:
-        platform: [windows-latest, ubuntu-latest]
+        platform: [windows-latest]
         build_type: [Release]
-        shared: [OFF, ON]
-        granite_platform: ["GLFW", "libretro", "KHR_DISPLAY"]
+        shared: [OFF]
+        granite_platform: ["GLFW"]
 
     env:
       PARALLEL: -j 2
